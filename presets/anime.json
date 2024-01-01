@@ -1,5 +1,5 @@
 {
-    "default_model": "bluePencilXL_v050.safetensors",
+    "default_model": "RaesanMix.safetensors",
     "default_refiner": "DreamShaper_8_pruned.safetensors",
     "default_refiner_switch": 0.667,
     "default_loras": [
@@ -42,7 +42,8 @@
     "default_aspect_ratio": "896*1152",
     "checkpoint_downloads": {
         "bluePencilXL_v050.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/bluePencilXL_v050.safetensors",
-        "DreamShaper_8_pruned.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/DreamShaper_8_pruned.safetensors"
+        "DreamShaper_8_pruned.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/DreamShaper_8_pruned.safetensors",
+        "RaesanMix.safetensors": "https://civitai.com/api/download/models/232446?type=Model&format=SafeTensor&size=pruned&fp=fp16" 
     },
     "embeddings_downloads": {
         "unaestheticXLv31.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/unaestheticXLv31.safetensors"
