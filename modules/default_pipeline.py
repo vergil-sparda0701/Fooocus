@@ -9,7 +9,7 @@ import modules.inpaint_worker
 import extras.vae_interpose as vae_interpose
 from extras.expansion import FooocusExpansion
 
-from ldm_patched.modules.model_base import SDXL, SDXLRefiner
+from ldm_patched.modules.model_base import BaseModel, SDXL, SDXLRefiner
 from modules.sample_hijack import clip_separate
 
 
@@ -46,7 +46,7 @@ def refresh_controlnets(model_paths):
 def assert_model_integrity():
     error_message = None
 
-    if not isinstance(model_base.unet_with_lora.model, SDXL):
+    if not isinstance(model_base.unet_with_lora.model, BaseModel):
         error_message = 'You have selected base model other than SDXL. This is not supported yet.'
 
     if error_message is not None:
